@@ -19,7 +19,7 @@ const CellPhone1 = () => {
     const [animationFinished, setAnimationFinished] = useState(false);
     const imageLogo = require('../../assets/images/Logo-ZYN-White.png')
     const imageCan = require('../../assets/images/Lata-full.png')
-    const imageJackpot = require('../../assets/images/mobile/jackpot_center.png')
+    const imageJackpot = require('../../assets/images/mobile/jackpot_left.png')
     const imageJackpotBigWinner = require('../../assets/images/mobile/jackpot_big_winner.png')
     const imageJackpotNormalWinner = require('../../assets/images/mobile/jackpot_normal_winner.png')
     const showBigReward =  dbValue?.some(item => bigRewardImages.includes(item.imageName));
