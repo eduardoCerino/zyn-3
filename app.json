@@ -7,7 +7,25 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "zyn-app",
-    "slug": "zyn-app"
+    "name": "Jackpot ZYN",
+    "slug": "zyn-app",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "69d13e8f-25ee-4fa1-a2a5-d9cfeca08a8b"
+      }
+    },
+    "android": {
+      "package": "com.pegasus1.zynapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.pegasus1.zynapp"
+    }
   }
 }
