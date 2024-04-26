@@ -107,24 +107,14 @@ const CellPhone1 = () => {
         );
     }
 
+    const image = require('../../assets/images/mobile/bg_cellphone1.png')
+
     const InitialScreen = () => {
         return (
             <TemplateBluLinear>
-            <View style={styles.container}>
-                <View style={styles.imageContainer}>
-                    <Animated.View style={[{ opacity: fadeAnim }, styles.image]}>
-                        {showFirstImage ? (
-                            <Image source={imageCan} style={styles.logo2} />
-                        ) : (
-                            <Image source={imageLogo} style={styles.logo} />
-                        )}
-                    </Animated.View>
-                </View>
-                <Text style={{ color: 'white', fontSize: 30, textAlign: 'center', marginTop: 20, fontFamily: 'GothamNarrow-Medium'}}>
-                    SIN HUMO, SIN TABACO ¡ZYN LÍMITES!
-                </Text>
-            </View>
-        </TemplateBluLinear>
+                 <ImageBackground source={image}  style={styles.containerInitial}/>
+          
+            </TemplateBluLinear>
         );
     }
   
@@ -231,6 +221,15 @@ const styles = StyleSheet.create({
         // backgroundColor: 'background: rgba(0, 59, 94, 0.80);',
         // opacity: 0.3,
     },
+
+    containerInitial: {
+        position: 'absolute',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        width: '100%',
+    }
+    ,
     slot_bg: {
         height: "100%",
         alignItems: 'center',
