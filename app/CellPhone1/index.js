@@ -164,7 +164,7 @@ const CellPhone1 = () => {
                     animationFinished ? (
                         <>
                           {/* {  showInitialScreen ? ( <InitialScreen /> ) : <WinnerScreen /> } */}
-                          <WinnerScreen />
+                          <InitialScreen />
                           
                         </>
                     ) : null
