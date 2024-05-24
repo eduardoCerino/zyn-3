@@ -82,7 +82,7 @@ export function TriggerScreen({ navigation}) {
   const [isBoxOpen, setIsBoxOpen] = useState(false);
   const leftValue = useRef(new Animated.Value(85)).current;
   const [loading, setLoading] = useState(false);
-  const notificationCollection = collection(database, "cellphone-rewards");
+  const notificationCollection = collection(database, "cellphone-rewards-3");
   // const showBigReward = true
   const { showBigReward } = useContext(RewardContext);
 
@@ -93,7 +93,7 @@ export function TriggerScreen({ navigation}) {
     const randomImageName = imageNames[randomIndex];
 
     const deletAllDocuments = async () => {
-      const querySnapshot = await getDocs(collection(database, "cellphone-rewards"));
+      const querySnapshot = await getDocs(collection(database, "cellphone-rewards-3"));
       querySnapshot.forEach((doc) => {
         deleteDoc(doc.ref);
       });

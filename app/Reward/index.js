@@ -48,7 +48,7 @@ const RewardScreen = ({ route, navigation }) => {
     }, []);
 
     const handleResetReward = () => {
-        const docRef = doc(database, "cellphone-rewards", documentId);
+        const docRef = doc(database, "cellphone-rewards-3", documentId);
         deleteDoc(docRef)
           .then(() => {
             console.log("Document successfully deleted!");

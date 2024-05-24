@@ -21,7 +21,7 @@ const Form = ({ navigation, playSound }) => {
   const [loading, setLoading] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [modalType, setModalType] = useState('')
-  const clientsCollection = collection(database, 'clients')
+  const clientsCollection = collection(database, 'clients-3')
   const isFormFilled = data.isAdult && data.termsAndConditions;
 
   const handleSubmit = async () => {

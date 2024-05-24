@@ -29,7 +29,7 @@ const CellPhone3 = () => {
     useEffect(() => {
         setShowWinnerScreen(false);
         setShowInitialScreen(false);
-        const notificationRef = collection(database, "cellphone-rewards");
+        const notificationRef = collection(database, "cellphone-rewards-3");
         const unsubscribe = onSnapshot(notificationRef, snapshot => {
             const data = snapshot.docs.map(doc => doc.data());
             setDbValue(data);
